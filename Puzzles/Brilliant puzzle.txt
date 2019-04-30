@@ -1,0 +1,16 @@
+Chains of Love
+
+by Kevin J. Lin
+Won't that smarmy concierge be impressed when you make all the exchanges with only one cut?
+
+The cut must be made in a link which is third from the end (either end, it doesn't matter). This one cut allows this link to detach itself from a set of two links, and a set of four links. There, now you have one, two, and four links.
+
+On day one the concierge is given the cut link. On day two, he returns the cut link in exchange for the two joined links. On day three you give him the cut link again. On day four, he returns all links and is given the set of four. On day five you give him the cut link. On day six you exchange the two links for the one. On day seven he has all the links- and then western union arrives in the nick of time.
+
+This puzzle gave people a run for their money. The first, and easiest problem was seeing that links could be exchanged back and forth, allowing combinations to represent various values. The second problem was realizing that a single cut could divide a chain into three parts.
+
+Updated 3/27/1999:
+
+The picture shows a string of links, but a bracelet is usually a circle. The circle almost always has a break for the latch, but a valid point was made that if not, one cut is not sufficient.
+
+	

@@ -1,0 +1,98 @@
+*** UNLOCKING MASTER COMBINATION PADLOCKS ***
+
+
+FINDING THE LAST NUMBER
+=======================
+
+On older Master Locks, ones where the arrow at the top is raised, simply
+pull on the shackle and turn the dial until it catches, that's the third
+number in the combination.
+
+On new locks with the recessed arrow, there are twelve places the dial will
+catch if you turn it while pulling on the shackle. Seven of these will catch
+between two numbers - ignore these. Find the five that catch on a number. 
+Four of these will end in the same digit, like 1, 11, 21, and 31. The fifth
+ends with a different digit, and is the third number in the combination.
+
+
+FINDING THE FIRST & SECOND NUMBER
+=================================
+
+Using the last number, locate it in the "last number chart" below to see
+which table to use to find the possible first and second numbers. Try each
+of the number combinations until the lock opens. Here's an example...
+
+  If the last number is 31 then you must use Table C according to the chart.
+  That means you must try the following combinations (see Try-Out Tables):
+    3 -  1 - 31
+    3 -  5 - 31
+    3 -  9 - 31
+    3 - 13 - 31
+      etc...
+    3 - 37 - 31
+    7 -  1 - 31
+    7 -  5 - 31
+    7 -  9 - 31
+    7 - 13 - 31
+      etc...
+    7 - 37 - 31
+   11 -  1 - 31
+   11 -  5 - 31
+   11 -  9 - 31
+      etc...
+   39 - 37 - 31
+
+
+                   *** LAST NUMBER CHART ***
+
+  TABLE | LAST NUMBER
+========+===========================================================
+    A   |  1   5   9  13  17  21  25  29  33  37  41  45  49  53  57
+--------+-----------------------------------------------------------
+    B   |  2   6  10  14  18  22  26  30  34  38  42  46  50  54  58
+--------+-----------------------------------------------------------
+    C   |  3   7  11  15  19  23  27  31  35  39  43  47  51  55  59
+--------+-----------------------------------------------------------
+    D   |  4   8  12  16  20  24  28  32  36   0
+--------+-----------------------------------------------------------
+
+
+               *** TRY-OUT COMBINATION TABLES ***
+
+   TABLE A           TABLE B           TABLE C           TABLE D
+==============    ==============    ==============    ==============
+FIRST | SECOND    FIRST | SECOND    FIRST | SECOND    FIRST | SECOND
+NUMS  | NUMS      NUMS  | NUMS      NUMS  | NUMS      NUMS  | NUMS
+------+-------    ------+-------    ------+-------    ------+-------
+    1 | 3             2 | 4             3 | 1             4 | 2
+    5 | 7             6 | 8             7 | 5             8 | 6
+    9 | 11           10 | 12           11 | 9            12 | 10
+   13 | 15           14 | 16           15 | 13           16 | 14
+   17 | 19           18 | 20           19 | 17           20 | 18
+   21 | 23           22 | 24           23 | 21           24 | 22
+   25 | 27           26 | 28           27 | 25           28 | 26
+   29 | 31           30 | 32           31 | 29           32 | 30
+   33 | 35           34 | 36           35 | 33           36 | 34
+   37 | 39           38 | 0            39 | 37            0 | 38
+
+----------------------------------------------------------------------------
+
+For those who care... (and yes, the last line in the table above was added).
+
+Derived Formula:
+================
+
+  input "Enter Last Number :", LastNumber
+  FirstNumber = LastNumber MOD 4 + abs(LastNumber MOD 4 = 0) * 4
+  SecondNumber = (LastNumber + 2) MOD 4 + abs((LastNumber + 2) MOD 4) * 4
+  for i = 0 to 36 step 4
+    print (FirstNumber+i)*abs(FirstNumber+i<40),(SecondNumber+i)*abs
+(SecondNumber+i<40)
+  next
+
+----------------------------------------------------------------------------
+
+"Use it, don't abuse it."
+
+--
+Peace. ~G
